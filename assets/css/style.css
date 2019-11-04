@@ -20,6 +20,21 @@ table {
     width: 100%;
 }
 
+#submit-button {
+
+    width:100px;
+    padding:15px;
+    font-size: 20px;
+  
+}
+
 .card-header {
     font-size: 35px;
+}
+
+.container {
+    width: 1000px;
+    height:100%;
+    opacity: 0.8;
+    background-color: rgb(138, 61, 61); 
 }
