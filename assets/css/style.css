@@ -3,3 +3,23 @@
     font-family: 'Be Vietnam', sans-serif;
     font-family: 'Katibeh', cursive;
 }
+
+th {
+    font-size: 28px;
+    text-align: center;
+    margin-left: 8px;
+
+}
+
+td {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 10px;
+}
+table {
+    width: 100%;
+}
+
+.card-header {
+    font-size: 35px;
+}
