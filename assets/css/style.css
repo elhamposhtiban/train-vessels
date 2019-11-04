@@ -20,16 +20,16 @@ table {
     width: 100%;
 }
 
-#submit-button {
+label {
+    font-size: 20px;
+}
 
+#submit-button {
     width:100px;
     padding:15px;
     font-size: 20px;
-  
-}
-
-.card-header {
-    font-size: 35px;
+    background-color: rgb(138, 61, 61);
+    color: cornsilk;
 }
 
 .container {
@@ -38,3 +38,15 @@ table {
     opacity: 0.8;
     background-color: rgb(138, 61, 61); 
 }
+
+.card {
+    width: 100%;
+    color: rgb(78, 43, 43);
+    border: 4px solid rgb(110, 75, 75);
+}
+.card-header {
+    font-size: 35px;
+}
+
+
+
