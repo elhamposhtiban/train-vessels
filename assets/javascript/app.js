@@ -63,5 +63,9 @@
 
    const currentTime = moment();
     console.log("CURRENT TIME: " + moment(currentTime).format("hh:mm"));
+
+    // finding diffrent time between current time and the time that train is coming 
+    const difftime = moment().diff(moment(firstTrain), "minutes");
+    console.log(difftime);
   })
 
