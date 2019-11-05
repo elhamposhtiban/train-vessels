@@ -60,5 +60,8 @@
 
    const firstTrain = moment(firstCome, "hh:mm").subtract(1, "year");
    console.log (firstTrain);
+
+   const currentTime = moment();
+    console.log("CURRENT TIME: " + moment(currentTime).format("hh:mm"));
   })
 
