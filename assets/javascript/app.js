@@ -1,7 +1,7 @@
 
 
 
- var firebaseConfig = {
+ const firebaseConfig = {
     apiKey: "AIzaSyB8R0VWT1oesDwMBNdgTaVNHaBvqFFwMFM",
     authDomain: "train-vessels.firebaseapp.com",
     databaseURL: "https://train-vessels.firebaseio.com",
@@ -13,4 +13,31 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
+  console.log(firebase);
+  
+  //creating variables 
+  const database = firebase.database();
+
+  //generating onclick here inorder to submit what we have in inputs 
+
+  $("#submit-button").on("click", function(event){
+      event.preventDefault();
+
+     const trainName = $("#input-train").val().trim();
+     const destination = $("#input-destination").val().trim();
+     const firstCome = $("#input-first").val().trim();
+    //  const firstCome = moment( $("#input-first").val().trim(), "HH:MM").format("hour");
+     const frequency = $("#input-frequency").val().trim();
+
+     const newRow = {
+         trainName,
+         destination,
+         firstCome,
+         frequency,
+     }
+
+     database.ref().push(newRow);
+
+
+  })
+

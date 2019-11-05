@@ -39,6 +39,13 @@ label {
     background-color: rgb(138, 61, 61); 
 }
 
+.jumbotron {
+    opacity: 0.7;
+   background-color: rgb(221, 152, 152);
+   color: rgb(90, 45, 45) ;
+}
+
+
 .card {
     width: 100%;
     color: rgb(78, 43, 43);

@@ -9,6 +9,9 @@
         <link rel="stylesheet" href="./assets/css/style.css">
         <!-- google font File -->
         <link href="https://fonts.googleapis.com/css?family=Be+Vietnam|Katibeh|Lora|Mansalva&display=swap" rel="stylesheet">
+                  <!-- Firebase References -->
+                  <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+                  <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-database.js"></script> 
     </head>
 
     <body>
@@ -73,19 +76,19 @@
                                 <form>
                                         <div class="form-group">
                                             <label for="inputtrain">Train name</label>
-                                            <input type="text" class="form-control" id="input-train" placeholder="text">
+                                            <input type="text" class="form-control" id="input-train" placeholder="Express">
                                         </div>
                                         <div class="form-group">
                                                 <label for="inputtrain">Destination</label>
-                                                <input type="text" class="form-control" id="input-destination" placeholder="text">
+                                                <input type="text" class="form-control" id="input-destination" placeholder="Houston">
                                         </div>
                                         <div class="form-group">
                                             <label for="inputtrain">Frist Train Time (HH:MM Military Time) </label>
-                                            <input type="text" class="form-control" id="input-first" placeholder="text">
+                                            <input type="text" class="form-control" id="input-first" placeholder="5:00">
                                         </div>
                                         <div class="form-group">
                                             <label for="inputtrain">Frequency(Min)</label>
-                                            <input type="text" class="form-control" id="input-frequency" placeholder="text">
+                                            <input type="text" class="form-control" id="input-frequency" placeholder="30">
                                         </div>
                                         <button type="submit" class="btn" id="submit-button">Submit</button>
                                 </form>
@@ -94,13 +97,12 @@
             </div>
    
 
-                <!-- javascript files -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./assets/javascript/app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-database.js"></script>
-        </body>
+                        <!-- javascript files -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script type="text/javascript" src="./assets/javascript/app.js"></script>
+
+    </body>
 </html>
