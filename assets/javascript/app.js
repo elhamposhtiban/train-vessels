@@ -65,7 +65,19 @@
     console.log("CURRENT TIME: " + moment(currentTime).format("hh:mm"));
 
     // finding diffrent time between current time and the time that train is coming 
-    const difftime = moment().diff(moment(firstTrain), "minutes");
-    console.log(difftime);
+    const diffTime = moment().diff(moment(firstTrain), "minutes");
+    console.log(diffTime);
+
+      // Time apart (remainder)
+      const Remainder = diffTime % frequency;
+      console.log(Remainder);
+
+          // Minute Until Train
+    const minutesToTrain = frequency - Remainder;
+    console.log( minutesToTrain);
+
+    // Next Train
+    const nextTrain = moment().add(minutesToTrain, "minutes");
+    console.log( moment(nextTrain).format("hh:mm"));
   })
 
