@@ -25,8 +25,8 @@
 
      const trainName = $("#input-train").val().trim();
      const destination = $("#input-destination").val().trim();
-     const firstCome = $("#input-first").val().trim();
-    //  const firstCome = moment( $("#input-first").val().trim(), "HH:MM").format("hour");
+     //const firstCome = $("#input-first").val().trim();
+     const firstCome = moment( $("#input-first").val().trim(), "hh:mm").format("hour");
      const frequency = $("#input-frequency").val().trim();
 
      const newRow = {
@@ -39,10 +39,25 @@
      database.ref().push(newRow);
      
      // set the value empty for inputs
-    $("#input-train").va("");
+    $("#input-train").val("");
     $("#input-destination").val("");
     $("#input-first").val("");
     $("#input-frequency").val("");
 
+  })
+
+  database.ref().on("child_added", function(childSnapshot){
+      console.log(childSnapshot.val())
+
+   const trainName = childSnapshot.val().trainName;
+   const destination = childSnapshot.val().destination;
+   const firstCome = childSnapshot.val().firstCome;
+   const frequency = childSnapshot.val().frequency;
+   console.log(trainName);
+   console.log(destination);
+   console.log(firstCome);
+   console.log(frequency);
+
+  // const nextTrain = moment.unix(firstCome).format("hh:mm")
   })
 
