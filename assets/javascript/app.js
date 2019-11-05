@@ -37,7 +37,12 @@
      }
 
      database.ref().push(newRow);
-
+     
+     // set the value empty for inputs
+    $("#input-train").va("");
+    $("#input-destination").val("");
+    $("#input-first").val("");
+    $("#input-frequency").val("");
 
   })
 
