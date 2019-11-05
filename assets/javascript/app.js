@@ -25,8 +25,8 @@
 
      const trainName = $("#input-train").val().trim();
      const destination = $("#input-destination").val().trim();
-     //const firstCome = $("#input-first").val().trim();
-     const firstCome = moment( $("#input-first").val().trim(), "hh:mm").format("hour");
+     const firstCome = $("#input-first").val().trim();
+    // const firstCome = moment( $("#input-first").val().trim(), "hh:mm").format("hour");
      const frequency = $("#input-frequency").val().trim();
 
      const newRow = {
@@ -58,6 +58,7 @@
    console.log(firstCome);
    console.log(frequency);
 
-  // const nextTrain = moment.unix(firstCome).format("hh:mm")
+   const firstTrain = moment(firstCome, "hh:mm").subtract(1, "year");
+   console.log (firstTrain);
   })
 
