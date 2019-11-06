@@ -78,16 +78,17 @@
 
     // Next Train
     const nextTrain = moment().add(minutesToTrain, "minutes");
-    console.log( moment(nextTrain).format("hh:mm A"));
+    console.log(moment(nextTrain).format("hh:mm A"));
  
     const newRow = $("<tr>").append(
         $("<td>").text(trainName),
         $("<td>").text(destination),
         $("<td>").text(frequency),
-        $("<td>").text(nextTrain),
+        $("<td>").text(moment(nextTrain).format("hh:mm A")),
         $("<td>").text(minutesToTrain),
+    );
 
-    )
+    $("#train-table").append(newRow);
 
 })
 
